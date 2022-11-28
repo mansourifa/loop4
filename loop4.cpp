@@ -24,18 +24,19 @@ int main()
 	    x1=-x;
 	    if(x1>=n){
 	    	sum+=x;
-		    for(i=2;x1>n;i++){ 
+		    for(i=2;x1>n && i < 10 ;i++){ 
+//			cout << "i: " << i << " x0: "<<x0<<" z: "<< z<< " k: "<<k;
 		        x0*=x; 
 		        z*=i;
 		        k=x0/z; 
-			printf ("i: %d x0: %f z: %f k: %f ",i,x0,z,k);
+			cout << fixed<<setprecision(3)<< "i: " << i << " x0: "<<x0<<" z: "<< z<< " k: "<<k ;
 		    	if(k<0)
 		            x1=-k;
 		    	else
 		            x1=k;
 		        if(x1<n)
 		            break;
-		        sum+=k;			
+		        sum+=k;
 			printf ("sum: %f\n",sum);
 		    }
 		}
