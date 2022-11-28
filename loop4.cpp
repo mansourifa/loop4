@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    double x,n,x0,sum=1.000,k=1,x1;
+    double x,n,x0,sum=1.000,k=1,x1; //x1=قدرمطلقx //x0=صورت کسر //k=کسر //z=فاکتوریل مخرج
     int z=1,i;
     cin>>x>>n;
     x0=x;
