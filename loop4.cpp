@@ -28,13 +28,15 @@ int main()
 		        x0*=x; 
 		        z*=i;
 		        k=x0/z; 
+			printf ("i: %d x0: %f z: %f k: %f ",i,x0,z,k);
 		    	if(k<0)
 		            x1=-k;
 		    	else
 		            x1=k;
 		        if(x1<n)
 		            break;
-		        sum+=k;
+		        sum+=k;			
+			printf ("sum: %f\n",sum);
 		    }
 		}
 	}
